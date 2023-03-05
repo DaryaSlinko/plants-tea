@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+
+#accordion .ui-accordion-header {
+    position: relative;
+}
+#accordion .ui-accordion-header-icon {
+    content: '';
+    position: absolute;
+    top: 14px;
+    right: 10px;
+    display: inline-block;
+    width: 20px;
+    height: 13px;
+    background: url(../images/next.png) 50% 50% no-repeat;
+}
+#accordion .ui-accordion-header-active .ui-accordion-header-icon {
+    background-image: url(../images/down.png);
+}
+
+.slick-prev::before {
+    content: url("../images/arrowleft.png");
+    opacity: unset;
+    line-height: unset;
+}
+
+.slick-prev {
+    left: 20px;
+    z-index: 100;
+
+}
+
+.slick-next::before {
+    content: url("../images/arrowright.png");
+    opacity: unset;
+    line-height: unset;
+}
+
+.slick-next {
+    right: 40px;
+}
+.hvr-shutter-in-vertical:before{
+    background-color: #0d6cf8;
+}
+
+
+.hvr-shutter-in-vertical:hover{
+    background: transparent;
+    border: transparent;
+    color: #0d6cf8;
+}
+
+
+.btn-slider{
+    height: 36px;
+}
+.ui-widget-content{
+    border: none;
+}
+.modal-body{
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    text-align: center;
+}
